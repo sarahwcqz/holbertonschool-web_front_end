@@ -1,3 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -47,9 +55,21 @@ h6 {
 }
 
 
-a {
+a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a[href]:visited {
+    font-style: italic;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+}
+
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
